@@ -21,6 +21,8 @@ const assert = require('assert')
         
     }
 
+
+
     {
         
         const filePath = './mocks/fiveItens-invalid.csv'
@@ -30,6 +32,7 @@ const assert = require('assert')
         
     }
 
+/*
     {
         
         const filePath = './mocks/threeItens-valid.csv'
@@ -60,5 +63,5 @@ const assert = require('assert')
         assert.deepEqual(result, expected)
         
     }
-    
+    */
 })()

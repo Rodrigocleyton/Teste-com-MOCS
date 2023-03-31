@@ -3,7 +3,7 @@ const { error } = require('./constants')
 const DEFAULT_OPTION = {
   //caso a regra de negócios mude, só será necessário alterar aqui
   maxLines: 3,
-  fields: ['id', 'name', 'profession', 'age']
+  fields: ['id','name','profession','age']
 }
 
 class File {
@@ -13,7 +13,7 @@ class File {
      const validation = this.isValid(content)
      if(!validation.valid) throw new Error(validation.error)
 
-     const result = this.parserCSVtoJSON(content)
+     const result = this.parserCSVToJSON(content)
      return result
     }
     static isValid (csvString, options = DEFAULT_OPTION) {

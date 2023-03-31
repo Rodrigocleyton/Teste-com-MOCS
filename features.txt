@@ -1,1 +1,6 @@
 The mock files directori is the case test tha will be test
+the file should have id,name,profession and age fields
+the file should not be empty
+the file should not be longer than 4 lines including headers
+
+https://github.com/Rodrigocleyton/Teste-com-MOCS
