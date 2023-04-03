@@ -8,7 +8,7 @@ const DEFAULT_OPTION = {
 
 class File {
   static async csvToJSON (filePath) {
-      const content = await readFile(filePath, "utf8")
+      const content = await readFile(filePath, 'utf8')
       //console.log({ content })
      const validation = this.isValid(content)
      if(!validation.valid) throw new Error(validation.error)
@@ -47,7 +47,17 @@ class File {
       const lines = csvString.split(/\r?\n/)
       const firstLine = lines.shift()
       const header = firstLine.split(',')
-      console.log({header})
+      //console.log({header})
+
+      const users = lines.map( line => {
+        const columns = line.split(',')
+        let user ={}
+        for(const index in columns) {
+          user[header[index]] = columns[index].trim()
+        }
+        return user
+      })
+      return users
     }
     
 }

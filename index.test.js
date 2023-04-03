@@ -22,7 +22,6 @@ const assert = require('assert')
     }
 
 
-
     {
         
         const filePath = './mocks/fiveItens-invalid.csv'
@@ -32,7 +31,7 @@ const assert = require('assert')
         
     }
 
-/*
+
     {
         
         const filePath = './mocks/threeItens-valid.csv'
@@ -41,21 +40,21 @@ const assert = require('assert')
                 id: 1,
                 name: "rodrigo",
                 profession: "backend",
-                age:41
+                age: 41
 
             },
             {
                 id: 2,
                 name: "cleyton",
                 profession: "frontend",
-                age:40
+                age: 40
 
             },
             {
                 id: 3,
                 name: "oliveira",
                 profession: "fullstack",
-                age:43
+                age: 43
 
             },
         ]
@@ -63,5 +62,5 @@ const assert = require('assert')
         assert.deepEqual(result, expected)
         
     }
-    */
+    
 })()
